@@ -5,11 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static '/css/main.css' %}">
     <title>Document</title>
 </head>
 <body>
-    <h2>Hello world</h2>
-    <img src="{% static '/images/img.jpg' %}" alt="img not displaying">
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 " >
+                    <div class="card card-body h-100 border-info"  id="profile-wrapper">
+                        <img id="profile-pic" src="{% static '/images/img.jpg' %}" alt="img not displaying"><hr> 
+                        <h4>Hi, I'm Dadasaheb Sawant</h4>
+                        <p>I love codding, doing research and collaboration</p> 
+                    </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body h-100 border-info">
+                     <h4>About me</h4><hr>
+                     <hr>
+                     <p>Good Interpersonal skills, commitment, result oriented, hard 
+                     working with a quest and zeal to learn new technologies and 
+                     undertake challenging tasks.</p>
+                     <p>Experienced in working with Python modules like Pandas, NumPy.</p>
+                     <p>Hackathon winner at SKN Sinhgad college of engg. 
+                     Pandharpur.
+                     Winner in Programming skills and Web-desinging state 
+                     level event held on Walchand college, Sangli.
+                     Strong debugging skills.</p>
+                     <p>NPTEL Data Structures and Algorithm using Python 
+                     certificate</p>
+
+					<ul class="social-links">
+						<a href="#"><li><img class="social" src="{% static 'images/facebook.png' %}"></li></a>
+						<a href="https://www.linkedin.com/in/sawant98d/"><li><img class="social" src="{% static 'images/linkedin.png' %}"></li></a>
+						<a href="https://twitter.com/dadasahebsawa11"><li><img class="social" src="{% static 'images/twitter.png' %}"></li></a>
+						<a href="https://www.youtube.com/channel/UCRd6kZIO8EQ_D1026zLzI2Q/featured"><li><img class="social" src="{% static 'images/youtube.png' %}"></li></a>
+					</ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+					<h5>My Experience as a Developer</h5>
+					<hr>
+					<p>Python developer at TCS.</p>
+					<p>Experienced Python Developer with a demonstrated history of working in the information technology and services industry. Skilled in Android Development, Github, Linux, Cascading Style Sheets (CSS), and C (Programming Language). Strong engineering professional with a Master of Computer Applications - MCA focused in Computer Science from Savitribai Phule Pune University.</p>
+					</div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+					<h5>What I Know</h5>
+					<hr>
+					<p>Python, Django, HTML/CSS, JavaScript/Jquery, React, Postgres, AWS and APIs such as google maps, JavaScript charts and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
+					<p>PS: Working on Django, ReactJS, BigData and Machine Learning.</p>
+				</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+					<h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
+				</div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+					<h5>My Short Term Goals</h5>
+				<hr>
+				<p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
+
+				</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
